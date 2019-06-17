@@ -1,0 +1,14 @@
+ <Context> 
+     <Resource name="jdbc/mysql" 
+         auth="Container"
+         type="javax.sql.DataSource" 
+         connectionProperties="v$session.osuser=MyApp;"
+         username="root" 
+         password="1234"
+         driverClassName="com.mysql.jdbc.Driver"
+         factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+         url = "jdbc:mysql://localhost/projectdb"
+         maxActive="500" 
+         maxIdle="100"/>  
+ </Context>
+ <!--url="jdbc:mysql://projectdb.cvnrdwrhnani.us-east-1.rds.amazonaws.com/projectdb?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;autoReconnect=true"-->
